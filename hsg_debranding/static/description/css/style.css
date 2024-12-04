@@ -1,0 +1,259 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.b-body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #f5f5f5;
+	color: #333;
+	  }
+
+.a-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.c-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Header Section */
+.h-header {
+	background: linear-gradient(45deg, #e1f0fa, #f0e6f5);
+	padding: 20px;
+	text-align: center;
+}
+
+.h-header img {
+	width: 230px;
+	margin-bottom: -10px;
+}
+
+.h-header h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+/* Description */
+.d-description {
+	background: linear-gradient(45deg, #e1f0fa, #f0e6f5);
+}
+
+.d-description h1 {
+	font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.d-description p {
+	font-size: 1.1em;
+	margin-bottom: 20px;
+	color: #333;
+	line-height: 1.6;
+	margin-left: 125px;
+	margin-right: 125px;
+}
+
+/* Features */
+.f-features {
+	background: linear-gradient(45deg, #e1f0fa, #f0e6f5);
+	padding: 40px 0;
+}
+
+.f-features h1 {
+	font-size: 2em;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.f-features h3 {
+    text-align: left;
+    color: #333;
+}
+
+.f-features .b-bulits {
+    list-style-type: none;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-left: 125px;
+
+}
+
+.f-features .b-bulits li {
+    font-size: 1.2em;
+    position: relative;
+    text-align: left;
+    color: #333;
+}
+
+.f-features .b-bulits li::before {
+    content: "→";
+    color: #333;
+    position: relative;
+    font-size: 1em;
+    padding-right: 8px;
+}
+
+/* Screenshots */
+.s-screenshots {
+	background: linear-gradient(45deg, #e1f0fa, #f0e6f5);
+	padding: 40px 0;
+}
+
+.s-screenshots h1 {
+	font-size: 2em;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.s-screenshots p {
+	font-size: 1.1em;
+	margin-bottom: 20px;
+	color: #333;
+	line-height: 1.6;
+	text-align: left;
+	margin-left:125px;
+}
+
+.picture-box img {
+	width: 230px;
+	margin-bottom: -10px;
+}
+
+.border-box {
+    display: inline-block;
+    width: 80%;
+    max-width: 80%;
+    border: none;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.border-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/* Services Section */
+.s-services {
+	background: linear-gradient(45deg, #e1f0fa, #f0e6f5);
+	padding: 40px 0;
+}
+
+.s-services h1 {
+	font-size: 2em;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.s-services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.s-service-item {
+    background: #ffffff;
+    border-radius: 50px;
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s;
+    z-index: 0;
+}
+
+.s-service-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    padding: 4px;
+    background: linear-gradient(90deg, #4a90e2, #ff66b2);
+    -webkit-mask: url(mask.png);
+    mask: url(mask.png);
+
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+    z-index: -1;
+}
+
+.s-service-item:nth-child(odd) {
+    color: #4a90e2;
+}
+
+.s-service-item:nth-child(even) {
+    color: #ff66b2;
+}
+
+/* Footer */
+.f-footer {
+	background: linear-gradient(45deg, #e1f0fa, #f0e6f5);
+	padding: 40px 0;
+	text-align: center;
+}
+
+.f-footer img {
+	width: 230px;
+	margin-bottom: -10px;
+}
+
+.f-footer h1 {
+	font-size: 2em;
+	margin-bottom: 40px;
+	color: #333;
+}
+
+.f-footer h3 {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-bottom: 20px;
+	color: #333;
+	margin-left: 125px;
+	margin-right: 125px;
+}
+
+.f-footer p {
+	font-size: 1.1em;
+	margin-bottom: 20px;
+	color: #333;
+	line-height: 1.6;
+	margin-left: 125px;
+	margin-right: 125px;
+}
+
+.i-icons a {
+	margin: 0 10px;
+	color: #333;
+	font-size: 1.5em;
+	text-decoration: none;
+}
