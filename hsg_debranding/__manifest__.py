@@ -36,11 +36,11 @@
                                 'hsg_debranding/static/src/xml/client_action.xml',
                             ],
                          },
-  "images"               :  ['static/description/icon.png'],
+  "images"               :  ['hsg_debranding/static/description/banner.gif'],
   "application"          :  True,
   "installable"          :  True,
   "auto_install"         :  False,
-  "price"                :  30,
+  "price"                :  15,
   "currency"             :  "USD",
   "pre_init_hook"        : "pre_init_check",
 }
